@@ -1,0 +1,36 @@
+---
+title: "Introduction to Git in RStudio"
+output:
+  html_document: 
+    theme: cerulean 
+---
+
+```{r include=FALSE}
+library(knitr)
+```
+
+# What is Git?
+Git is a particular implementation of version control. It's really powerful and has many features but we will only scratch the surface.
+
+# What is GitHub?
+
+When you start a Git project on your computer, you are going to store the entire history of the project locally. The storage of your project and its history is called a repository. It is fine. However, the great advantage of using version control such as Git is to be able to collaborate with other people (and also to store your repository somewhere else).
+
+GitHub is a commercial website that lets you store your repository publicly for free (you need to pay if you want to keep them private, you can also get an educative account with an .edu email address that will give you some free private accounts). There are other website that offer similar services including BitBucket. Storing your repositories on these website has many advantages. It offers a friendly interface to many common operations so that you don't have to remember how to do them at the command line. They also provide other useful features including an *Issue tracker* and wikis.
+
+# The Git workflow
+We have already *committed*, *pulled* and *pushed* but we haven't been through the details of what it means how these pieces fit together.
+
+![Git workflow](http://s3.amazonaws.com/assets.datacamp.com/production/course_3697/datasets/git_areas.png)
+
+# The different Git areas
+
+The typical workflow goes like this: - you create/edit/modify a file inside your repository - you stage the changes to the staging area - you commit these changes which creates a permanent snapshot of the file in the Git directory along with a message that indicates what you did to the file.
+
+When you start a new project, the files in your working directory are untracked, you will first need to add them to your repository before Git can keep track of them and their history.
+
+ At this stage, everything is still on your hard drive. To upload your modifications (i.e., your commits) to GitHub you need to push to it.
+
+If you are working with other people you are also committing your shared repository on GitHub, you will need to pull to bring their modifications into your local copy of the repository.
+
+Commits are cheap. Commit often and provide useful messages so you can keep track of what you are doing. Don't do this:
