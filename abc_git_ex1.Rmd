@@ -5,10 +5,6 @@ output:
     theme: cerulean 
 ---
 
-```{r include=FALSE}
-library(knitr)
-```
-
 # What is Git?
 Git is a particular implementation of version control. It's really powerful and has many features but we will only scratch the surface.
 
